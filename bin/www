@@ -21,7 +21,7 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
-//var io = require('../modules/socket/socket.controller.js').listen(server);
+var io = require('../modules/socket/socket.controller.js').listen(server);
 
 server.listen(port);
 server.on('error', onError);
