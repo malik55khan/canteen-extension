@@ -2,7 +2,6 @@
 var ObjectId = require('mongoose').Types.ObjectId;
 const orderService = require('../order/order.service');
 var responseMessage = require('./payment.message');
-var CONFIG = require('../../config/index');
 var socketController = require('../socket/socket.controller');
 var settingService = require('../setting/setting.service');
 

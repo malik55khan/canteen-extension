@@ -2,7 +2,7 @@ var CONFIG = {
   SiteName:"Hacethon",
   dataEncryptionKey: "hacksdd@sdd1234",
   mongoUrl: `mongodb://hackathon:hackathon@192.168.0.5:27017/hackathon`,
-  JWTSecret: 'hacethon',
+  JWTSecret: 'smhfasjkfhljkah',
   Host:{
     Port:3200,
     IP:'localhost',
@@ -29,5 +29,4 @@ var CONFIG = {
   }
 };
 CONFIG.WebEndPoint = `http://${CONFIG.Host.IP}:${CONFIG.Host.Port}`;
-CONFIG.SiteLogo = `http://${CONFIG.Host.IP}:${CONFIG.Host.Port}/admin/assets/images/logo.png`,
 module.exports  = CONFIG;

@@ -1,6 +1,4 @@
 var socketio = require('socket.io');
-var async = require('async');
-var _lodash = require('lodash');
 var socketConnection = exports = module.exports = {};
 
 socketConnection.listen = function listen(app) {

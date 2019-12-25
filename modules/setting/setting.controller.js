@@ -1,16 +1,8 @@
 'use strict'
-var ObjectId = require('mongoose').Types.ObjectId;
-var crypto = require('crypto');
-var mailer = require('../../mailer/mailer');
-var CommonService = require('../../services/common');
+
 const settingService = require('./setting.service');
 var responseMessage =  require('./setting.message');
-var loadsh = require('lodash');
-var validator = require("email-validator");
-var jwToken = require('../../config/jwToken.js');
-var moment = require('moment-timezone');
 var CONFIG = require('../../config/index');
-var socketController = require('../socket/socket.controller');
 var formidable = require('formidable');
 var path = require('path');
 var mkdirp = require('mkdirp');

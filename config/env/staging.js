@@ -2,7 +2,7 @@ var CONFIG = {
   SiteName:"Hacethon",
   dataEncryptionKey: "hacksdd@sdd1234",
   mongoUrl: `mongodb://checkisaurus:checkisaurus@192.168.0.5:27017/checkisaurus`,
-  JWTSecret: 'checkisaurusIsAwesome',
+  JWTSecret: 'asfjadsghfghg',
   Host:{
     Port:3200,
     IP:'localhost',
