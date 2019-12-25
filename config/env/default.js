@@ -1,8 +1,7 @@
 var CONFIG = {
   SiteName:"Hacethon",
   dataEncryptionKey: "hacksdd@sdd1234",
-  // mongoUrl: `mongodb://checkisaurus:checkisaurus@192.168.0.5:27017/checkisaurus`,
-  mongoUrl: `mongodb+srv://rohitnegi:rohitnegi@cluster0-plqey.mongodb.net/test?retryWrites=true&w=majority`,
+  mongoUrl: `mongodb://hackathon:hackathon@192.168.0.5:27017/hackathon`,
   JWTSecret: 'hacethon',
   Host:{
     Port:4444,
