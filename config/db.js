@@ -9,7 +9,7 @@ mongoose.Promise = bluebird;
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
-mongoose.connect(CONFIG.mongoUrl,{useUnifiedTopology: true,useNewUrlParser: true});
+mongoose.connect("mongodb://hackathon:hackathon@192.168.0.5:27017/hackathon",{useUnifiedTopology: true,useNewUrlParser: true});
 var db = mongoose.connection;
 // CONNECTION EVENTS
 // When successfully scheduleconnected
