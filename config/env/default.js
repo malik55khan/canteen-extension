@@ -4,7 +4,7 @@ var CONFIG = {
   mongoUrl: `mongodb://hackathon:hackathon@192.168.0.5:27017/hackathon`,
   JWTSecret: 'hacethon',
   Host:{
-    Port:4444,
+    Port:3200,
     IP:'localhost',
     TEST_ANGULAR_PORT:4200
   },

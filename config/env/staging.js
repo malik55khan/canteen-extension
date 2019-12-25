@@ -4,7 +4,7 @@ var CONFIG = {
   mongoUrl: `mongodb://checkisaurus:checkisaurus@192.168.0.5:27017/checkisaurus`,
   JWTSecret: 'checkisaurusIsAwesome',
   Host:{
-    Port:4444,
+    Port:3200,
     IP:'localhost',
     TEST_ANGULAR_PORT:4200
   },
@@ -21,18 +21,6 @@ var CONFIG = {
     NO_REPLY:"no_reply@yopmail.com",
     SUPPORT_EMAIL:"support@yopmail.com"
   },
-  stripeCredentials:{
-    Live:{
-      currency:"usd",
-      publishKey:"pk_test_3bIXPRBY7LdV7PzAuulzA2ZI",
-      secretKey:"sk_test_66JR8sinsZtfId6OgtFdb6c6"
-    },
-    Dev:{
-      currency:"usd",
-      publishKey:"pk_test_3bIXPRBY7LdV7PzAuulzA2ZI",
-      secretKey:"sk_test_66JR8sinsZtfId6OgtFdb6c6"
-    }
-  },
   DocumentUrl:{
     BaseDirecory:"public/",
     ProfileImage : 'uploadMedia/profile',
@@ -41,6 +29,6 @@ var CONFIG = {
   }
 };
 CONFIG.WebEndPoint = `http://${CONFIG.Host.IP}:${CONFIG.Host.Port}`;
-CONFIG.SiteLogo = `http://${CONFIG.Host.IP}:${CONFIG.Host.Port}/admin/assets/images/logo.png`,
-CONFIG.Stripe = CONFIG.stripeCredentials[process.env.STRIPE];
+
+
 module.exports  = CONFIG;
