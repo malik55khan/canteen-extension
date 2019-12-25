@@ -13,7 +13,7 @@ console.log("Enviornment :",process.env.NODE_ENV ? process.env.NODE_ENV : "Defau
 /**
  * Get port from environment and store in Express.
  */
-var port = normalizePort(CONFIG.Host.Port);
+var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**
@@ -21,10 +21,7 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
-var io = require('../modules/socket/socket.controller.js').listen(server);
-/**
- * Listen on provided port, on all network interfaces.
- */
+//var io = require('../modules/socket/socket.controller.js').listen(server);
 
 server.listen(port);
 server.on('error', onError);
